@@ -1,0 +1,63 @@
+/*================================================
+  Author: Joseph Paulson
+  github.io/mindvoyager
+  ================================================
+  LEGACY COMPATIBILITY
+  ================================================*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+mark,
+nav,
+section,
+summary,
+time {
+	display: block;
+}
+
+/*========================
+  GENERIC STYLES
+  ========================*/
+body {
+	background: url(../images/dark_wood_background1.png) repeat;
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+}
+
+.content-wrapper {
+	
+}
+
+nav {
+	
+}
+
+header {
+	
+}
+
+main {
+	
+}
+
+section {
+	
+}
+
+.gallery {
+	
+}
+
+.contact {
+	
+}
+
+footer {
+	
+}

@@ -20,24 +20,101 @@ time {
 	display: block;
 }
 
-/*========================
+/*================================================
   GENERIC STYLES
-  ========================*/
+  ================================================*/
+@font-face {
+	font-family: Footlight;
+	src: url(../resources/FTLTLT.TTF);
+}
+
+@font-face {
+	font-family: Kingthings Petrock;
+	src: url(../resources/Kingthings_Petrock.ttf);
+}
+
+@font-face {
+	font-family: Kingthings Petrock Light;
+	src: url(../resources/Kingthings_Petrock_light.ttf);
+}
+
 body {
-	background: url(../images/dark_wood_background1.png) repeat;
-	background-attachment: fixed;
+	font-family: 'Kingthings Petrock Light', 'Footlight MT Light', Palatino, serif;
+	background: url(../images/dark_wood_background1.png) repeat fixed center top;
 	margin: 0;
 	padding: 0;
 }
 
-.content-wrapper {
-	
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Kingthings Petrock', 'Old English Text MT Regular', Palatino, serif;
+	font-weight: normal;
+	color: #9d3323;
 }
 
+h1 {
+	font-size: 2.2rem;
+	margin: 0 0 0.4rem 0;
+}
+
+a {
+	color: #42595b;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #3b6e73;
+	text-shadow:
+		-1px -1px 0 #c0911e, /*e2b441*/ /*hack for adding stroke*/
+		1px -1px 0 #c0911e,
+		-1px 1px 0 #c0911e,
+		1px 1px 0 #c0911e;
+}
+
+a:active {
+	color: #3b6e73;
+	text-shadow:
+		-1px -1px 0 #c0911e, /*e2b441*/ /*hack for adding stroke*/
+		1px -1px 0 #c0911e,
+		-1px 1px 0 #c0911e,
+		1px 1px 0 #c0911e;
+}
+
+p {
+	padding: 0;
+	margin: 0 0 0.3rem 0;
+}
+
+.content-wrapper {
+	margin: 0 5%; /*change with media break-points */
+}
+
+.box {
+	/*font-family: 'Footlight', 'Footlight MT Light', Palatino, serif;*/
+	font-size: 1.1rem;
+	color: rgba(87,76,67,1.0); /*#574c43*/
+	background: rgba(239,224,194,0.65); /*#efe0c2*/
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+	border-style: hidden;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	margin: 0.75rem 0;
+	padding: 36px;
+	/*shadow inside*/ /*inside glow #b27e49*/
+	box-shadow: 0 0 36px 18px rgba(178,126,73,0.65) inset, 2px 2px 10px 0 rgba(0,0,0,0.5);
+}
+
+/*================================================
+  NAVIGATION STYLES
+  ================================================*/
 nav {
 	
 }
 
+/*================================================
+  ELEMENT STYLES
+  ================================================*/
 header {
 	
 }

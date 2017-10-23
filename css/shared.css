@@ -109,16 +109,51 @@ p {
   NAVIGATION STYLES
   ================================================*/
 nav {
-	
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	background: rgb(239,224,194);
+}
+
+nav ul {
+	text-decoration: none;
+}
+
+nav li {
+	display: inline-block;
 }
 
 /*================================================
-  ELEMENT STYLES
+  HEADER STYLES
   ================================================*/
 header {
 	
 }
 
+#bg-text {
+	position: relative;
+}
+
+#name {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-family: 'Kingthings Petrock', 'Old English Text MT Regular', Palatino, serif;
+	font-weight: normal;
+	color: #9d3323;
+	text-shadow:
+		-1px -1px 0 #e2b441, /*e2b441*/ /*hack for adding stroke*/
+		1px -1px 0 #e2b441,
+		-1px 1px 0 #e2b441,
+		1px 1px 0 #e2b441;
+	font-size: 3.0rem;
+}
+
+/*================================================
+  ELEMENT STYLES
+  ================================================*/
 main {
 	
 }

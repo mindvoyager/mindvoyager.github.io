@@ -1,0 +1,9 @@
+Ask for help with
+	Sliding down transitions javascript
+	Pop up creation javascript
+	navbar highlight when on appropriate section javascript
+
+Work on
+	navbar
+	footer
+

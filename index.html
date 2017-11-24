@@ -2,24 +2,35 @@
 <html lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<!-- HTML5 Shiv semantic elements workaround for earlier than IE 9 -->
+		<!-- HTML5 Shiv semantic elements workaround and Respond.js for earlier than IE 9 -->
 		<!-- [if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
-			</script>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		<meta content="width=device-width,initial-scale=1.0" name="viewport">
+		<!-- Bootstrap Core CSS -->
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<!-- Main CSS -->
 		<link rel="stylesheet" href="./css/shared.css">
-		<title></title>
+		<!-- Favicon links -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="theme-color" content="#ffffff">
+		<!-- Title -->
+		<title>Joseph Paulson</title>
 	</head>
 	<body>
 		
 			<!-- NAVIGATION -->
 			<nav>
 				<ul>
-					<li><a href="#summary">Home</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#summary">&nbsp;Home&nbsp;</a></li>
+					<li><a href="#skills">&nbsp;Skills&nbsp;</a></li>
+					<li><a href="#portfolio">&nbsp;Portfolio&nbsp;</a></li>
+					<li><a href="#contact">&nbsp;Contact&nbsp;</a></li>
 				</ul>
 			</nav>
 			<!-- END NAVIGATION -->
@@ -28,7 +39,10 @@
 			<header id="summary">
 				<div class="box">
 					<div id="bg-text">
-						<div id="name">Joseph Paulson</div>
+						<div id="name">
+							Joseph Paulson
+							<div id="sub">software developer</div>
+						</div>
 						<p>
 							O Fortuna, velut luna, statu variabilis, semper crescis, aut decrescis; vita detestabilis, nunc obdurat, et tunc curat, ludo mentis aciem, egestatem, potestatem, dissolvit ut glaciem.
 						</p>
@@ -40,7 +54,7 @@
 						</p>
 					</div>
 				</div>
-				<!-- Carmina Burana filler text interspersed with Joseph Paulson -->
+				<!-- O Fortuna filler text interspersed with Joseph Paulson -->
 			</header>
 			<!-- END TITLE -->
 			
@@ -48,12 +62,45 @@
 			<main id="skills">
 				<div class="box">
 					<h1>Skills</h1>
-					<h2>Core Languages</h2> <!-- popup effect with page on Python, C#, Java-->
-					<h2>HTML/CSS</h2> <!-- popup effect with page on Bootstrap -->
-					<h2>Javascript</h2>
-					<h2>Databases</h2>
-					<h2>Version Control</h2> <!-- popup effect with page on Git -->
-					<h2>Design</h2> <!-- popup effect with page on Wordpress, Photoshop, -->
+					<div class="skills-container">
+						<div class="skills-container-child">
+							<h2>Core Languages</h2>
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btn-outline-dark button-text-reset" data-toggle="modal" data-target="#CoreLanguages">
+								Skill Summary
+							</button>
+						</div>
+						<div class="skills-container-child">
+							<h2>Web Development</h2>
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btn-outline-dark button-text-reset" data-toggle="modal" data-target="#WebDevelopment">
+								Skill Summary
+							</button>
+						</div>
+						<div class="skills-container-child">
+							<h2>Databases</h2>
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btn-outline-dark button-text-reset" data-toggle="modal" data-target="#Databases">
+								Skill Summary
+							</button>
+						</div>
+						<div class="skills-container-child">
+							<h2>Version Control</h2>
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btn-outline-dark button-text-reset" data-toggle="modal" data-target="#VersionControl">
+								Skill Summary
+							</button>
+						</div>
+						<div class="skills-container-child">
+							<h2>Design</h2>
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btn-outline-dark button-text-reset" data-toggle="modal" data-target="#Design">
+								Skill Summary
+							</button>
+						</div>
+					</div>
+						
+						
 				</div>
 			</main>
 			<!-- END MAIN -->
@@ -87,5 +134,94 @@
 			</footer>
 			<!-- END FOOTER -->
 		</div>
+		<!-- Skills: Core Languages Modal -->
+		<div class="modal fade" id="CoreLanguages" tabindex="-1" role="dialog" aria-labelledby="CoreLanguagesLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Core Languages</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						page on Python, C#, Java
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Skills: Web Development Modal -->
+		<div class="modal fade" id="WebDevelopment" tabindex="-1" role="dialog" aria-labelledby="WebDevelopmentLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Core Languages</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						page on HTML5 CSS3 Bootstrap4 JavaScript JQuery
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Skills: Databases Modal -->
+		<div class="modal fade" id="Databases" tabindex="-1" role="dialog" aria-labelledby="DatabasesLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Core Languages</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						page on SQL Server 2008+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Skills: Version Control Modal -->
+		<div class="modal fade" id="VersionControl" tabindex="-1" role="dialog" aria-labelledby="VersionControlLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Core Languages</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						page on Git
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Skills: Design Modal -->
+		<div class="modal fade" id="Design" tabindex="-1" role="dialog" aria-labelledby="DesignLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Core Languages</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						page on Wordpress, Photoshop, GIMP
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- JQuery -->
+		<script src="./js/jquery-3.2.1.slim.min.js"></script>
+		<!-- Popper.js -->
+		<script src="./js/popper.min.js"></script>
+		<!-- Bootstrap Core JavaScript -->
+		<script src="./js/bootstrap.min.js"></script>
+		<!-- Plugin JavaScript -->
+		<!-- paths -->
 	</body>
 </html>

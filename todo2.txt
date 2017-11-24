@@ -1,0 +1,15 @@
+* fix the menubar spacing problem
+	- remove margin-top from .box
+* implement scrolling to #menu-items
+	- look up on bootstrap site
+	- look up on JQuery site
+	- look up on Cody Landry site
+* add fixed bottom footer
+	- z-index: -100;
+	- inset shadow : https://mayvendev.com/blog/inner-shadows-in-css-images-text-and-beyond
+Done
+* add favicon
+* add bootstrap to site
+* add modals to Skills section
+* change the menubar to color: white; background-color: the red of h#s; box-shadow: (see the offset of page-containers)
+* implement @media breaks

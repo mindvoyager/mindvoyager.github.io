@@ -86,11 +86,13 @@ p {
 }
 
 .content-wrapper {
-	margin: 0 5%; /*change with media break-points */
+	width: 300px;	/*change with media break-points */
+	margin: 0 auto;
 }
 
 .box {
 	/*font-family: 'Footlight', 'Footlight MT Light', Palatino, serif;*/
+	position: relative;
 	font-size: 1.1rem;
 	color: rgba(87,76,67,1.0); /*#574c43*/
 	background: rgba(239,224,194,0.65); /*#efe0c2*/
@@ -99,36 +101,68 @@ p {
 	border-style: hidden;
 	border-radius: 0.5rem;
 	overflow: hidden;
-	margin: 0.75rem 0;
+	margin-bottom: 0.75rem;
 	padding: 36px;
 	/*shadow inside*/ /*inside glow #b27e49*/
 	box-shadow: 0 0 36px 18px rgba(178,126,73,0.65) inset, 2px 2px 10px 0 rgba(0,0,0,0.5);
+}
+
+.box a {
+	text-decoration: none;
 }
 
 /*================================================
   NAVIGATION STYLES
   ================================================*/
 nav {
+	color: #fff;
 	position: fixed;
 	width: 100%;
-	text-align: center;
-	background: rgb(239,224,194);
+	height: 3rem;
+	background: #9d3323;
 	z-index: 200;
+	font-size: 1.3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	box-shadow: 5px 0 10px 0 rgba(0,0,0,0.5);
+	border-style: double none double none;
+	border-width: 6px;
+	border-color: #d57160;
+}
+
+nav a {
+	color: #fff;
+	-webkit-transition: color 0.5s;
+	transition: color 0.5s;
+}
+
+nav a:hover {
+	color: #efe0c2;
+	text-shadow: none;
+	text-decoration: none;
 }
 
 nav ul {
 	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
 
 nav li {
-	display: inline-block;
+	/*display: inline-block */
+	display: inline;
 }
 
 /*================================================
   HEADER STYLES
   ================================================*/
 header {
-	
+	/*adding any kind of margin-top to header
+	  or box results in everything being shoved
+	  down by that amount. Why??! */
 }
 
 #bg-text {
@@ -150,15 +184,36 @@ header {
 		-1px 1px 0 #e2b441,
 		1px 1px 0 #e2b441;
 	font-size: 3.0rem;
+	display: inline;
+}
+
+#name #sub {
+	font-size: 0.75em;
+	/*line-height: 0.05em;*/
+	color: #6b7d51;
 }
 
 /*================================================
-  ELEMENT STYLES
+  SKILLS STYLES
   ================================================*/
 main {
 	
 }
 
+.skills-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.skills-container-child {
+	
+}
+
+
+/*================================================
+  ELEMENT STYLES
+  ================================================*/
 section {
 	
 }
@@ -173,4 +228,38 @@ section {
 
 footer {
 	
+}
+
+/*================================================
+  MEDIA BREAKS
+  ================================================*/
+/* Extra small devices (portrait phones, less than 576px)
+   No media query since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	.content-wrapper {
+		width: 518px;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.content-wrapper {
+		width: 691px;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.content-wrapper {
+		width: 893px;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.content-wrapper {
+		width: 744px;
+	}
 }

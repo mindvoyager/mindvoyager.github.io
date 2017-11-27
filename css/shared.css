@@ -152,7 +152,6 @@ nav ul {
 }
 
 nav li {
-	/*display: inline-block */
 	display: inline;
 }
 
@@ -210,6 +209,36 @@ main {
 	text-align: center;
 }
 
+.contact {
+	
+}
+
+/*================================================
+  FOOTER STYLES
+  ================================================*/
+footer {
+	position: fixed;
+	bottom: 0px;
+	margin: 0 auto;
+}
+
+footer div {
+	/*display: inline;
+	text-align: center;*/
+}
+
+footer h3 {
+
+	/*
+	background-color: rgba(0,255,0,0.5);
+	background: url(../images/black37pt5percent_alpha.png), url(../images/dark_wood_background1.png) repeat fixed center top;
+	color: transparent;
+	text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	*/
+}
 
 /*================================================
   ELEMENT STYLES
@@ -219,14 +248,6 @@ section {
 }
 
 .gallery {
-	
-}
-
-.contact {
-	
-}
-
-footer {
 	
 }
 

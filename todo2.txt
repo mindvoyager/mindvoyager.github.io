@@ -1,6 +1,6 @@
 * fix the menubar spacing problem
 	- remove margin-top from .box
-* implement scrolling to #menu-items
+* implement scrolling to #menu-items **Do 1st 
 	- look up on bootstrap site
 	- look up on JQuery site
 	- look up on Cody Landry site

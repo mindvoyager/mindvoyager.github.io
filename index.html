@@ -27,10 +27,10 @@
 			<!-- NAVIGATION -->
 			<nav>
 				<ul>
-					<li><a href="#summary">&nbsp;Home&nbsp;</a></li>
-					<li><a href="#skills">&nbsp;Skills&nbsp;</a></li>
-					<li><a href="#portfolio">&nbsp;Portfolio&nbsp;</a></li>
-					<li><a href="#contact">&nbsp;Contact&nbsp;</a></li>
+					<li><a href="#summary" id="home-link">&nbsp;Home&nbsp;</a></li>
+					<li><a href="#skills" id="skills-link">&nbsp;Skills&nbsp;</a></li>
+					<li><a href="#portfolio" id="portfolio-link">&nbsp;Portfolio&nbsp;</a></li>
+					<li><a href="#contact" id="contact-link">&nbsp;Contact&nbsp;</a></li>
 				</ul>
 			</nav>
 			<!-- END NAVIGATION -->
@@ -222,6 +222,12 @@
 		<!-- Bootstrap Core JavaScript -->
 		<script src="./js/bootstrap.min.js"></script>
 		<!-- Plugin JavaScript -->
-		<!-- paths -->
+		<script>
+			$("#home-link").click(function() {
+				$('html, body').animate({
+					scrollTop: $("#summary").offset().top
+				}, 800);
+			});
+		</script>
 	</body>
 </html>

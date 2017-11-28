@@ -1,10 +1,12 @@
 * fix the menubar spacing problem
 	- remove margin-top from .box
-* add fixed bottom footer
+* add fixed bottom footer ** Do 1st
 	- z-index: -100;
 	- inset shadow : https://mayvendev.com/blog/inner-shadows-in-css-images-text-and-beyond
 * add real text to modals
 	- see codylandry.com ; and jeflux.com on archive.org
+	- correct modal titles
+* add LinkedIn and Email to Contact
 Done
 * add favicon
 * add bootstrap to site

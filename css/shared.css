@@ -105,6 +105,7 @@ p {
 	padding: 36px;
 	/*shadow inside*/ /*inside glow #b27e49*/
 	box-shadow: 0 0 36px 18px rgba(178,126,73,0.65) inset, 2px 2px 10px 0 rgba(0,0,0,0.5);
+	z-index: 0;
 }
 
 .box a {
@@ -216,20 +217,21 @@ main {
 /*================================================
   FOOTER STYLES
   ================================================*/
+/*can't get the footer centered for some reason!!*/
 footer {
 	position: fixed;
 	bottom: 0px;
-	margin: 0 auto;
+	width: 100%;
+	z-index = -200;
 }
 
 footer div {
-	/*display: inline;
-	text-align: center;*/
 }
 
 footer h3 {
+	display: inline;
+	text-align: center;
 
-	/*
 	background-color: rgba(0,255,0,0.5);
 	background: url(../images/black37pt5percent_alpha.png), url(../images/dark_wood_background1.png) repeat fixed center top;
 	color: transparent;
@@ -237,7 +239,7 @@ footer h3 {
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	background-clip: text;
-	*/
+
 }
 
 /*================================================

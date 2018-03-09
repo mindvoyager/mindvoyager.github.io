@@ -222,10 +222,13 @@ main {
   ================================================*/
 /*can't get the footer centered for some reason!!*/
 footer {
+	/*
 	position: fixed;
 	bottom: 0px;
 	width: 100%;
 	z-index = -200;
+	*/
+	margin: 0 auto;
 }
 
 footer div {
@@ -234,7 +237,9 @@ footer div {
 footer h3 {
 	display: inline;
 	text-align: center;
+	color: #efe0c2;
 
+	/*
 	background-color: rgba(0,255,0,0.5);
 	background: url(../images/black37pt5percent_alpha.png), url(../images/dark_wood_background1.png) repeat fixed center top;
 	color: transparent;
@@ -242,6 +247,7 @@ footer h3 {
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	background-clip: text;
+	*/
 
 }
 

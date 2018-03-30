@@ -80,6 +80,10 @@ a:active {
 		1px 1px 0 #c0911e;
 }
 
+a:hover.btn {
+	text-shadow: none;
+}
+
 p {
 	padding: 0;
 	margin: 0 0 0.3rem 0;
@@ -208,6 +212,17 @@ main {
 
 .skills-container-child {
 	text-align: center;
+}
+
+/*================================================
+  PROJECTS STYLES
+  ================================================*/
+.card, .card-footer {
+	background-color: transparent;
+}
+#portfolio .card-footer {
+	padding-left: 0;
+	padding-right: 0;
 }
 
 /*================================================
